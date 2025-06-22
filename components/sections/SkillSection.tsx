@@ -5,7 +5,7 @@ import { Zap } from 'lucide-react';
 
 const SkillSection = () => {
     return (
-        <div className="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8  py-12 bg-gradient-to-br from-slate-50 via-white to-purple-50/30 relative overflow-hidden">
+        <div className="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-br from-slate-50 via-white to-purple-50/30 relative overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -36,7 +36,7 @@ const SkillSection = () => {
                     >
                         <Card className={`h-full border-0 bg-gradient-to-br ${skill.bgColor} shadow-xl hover:shadow-2xl transition-all duration-500 group relative overflow-hidden`}>
                             <CardContent className="p-6 text-center relative z-10">
-                                <div className={`w-20 h-20 bg-gradient-to-r ${skill.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300`}>
+                                <div className={`w-16 h-16 bg-gradient-to-r ${skill.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300`}>
                                     <skill.icon size={32} className="text-white" />
                                 </div>
 

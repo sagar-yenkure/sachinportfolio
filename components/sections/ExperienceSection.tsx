@@ -16,7 +16,7 @@ export default function ExperienceSection() {
         <div className="absolute top-1/2 left-1/4 w-8 h-8 bg-gradient-to-r from-pink-400 to-purple-400 rotate-12 opacity-20"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
 
         <div className="text-center mb-16">
 
@@ -34,19 +34,8 @@ export default function ExperienceSection() {
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {experiences.map((exp, index) => (
             <div key={index} className="group">
-              <div className={`bg-gradient-to-br ${exp.bgGradient} rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-white/50 backdrop-blur-sm`}>
-                {/* Header */}
-                <div className="flex items-start justify-between mb-4">
-                  <div className={`p-3 bg-gradient-to-r ${exp.gradient} rounded-xl shadow-lg`}>
-                    <exp.icon size={24} className="text-white" />
-                  </div>
-                  <div className="text-right">
-                    <span className={`inline-block px-3 py-1.5 bg-gradient-to-r ${exp.gradient} text-white rounded-full text-xs font-semibold shadow-lg`}>
-                      {exp.type === 'internship' ? '💼 Internship' : '🎓 Education'}
-                    </span>
-                    <p className="text-xs text-gray-600 mt-1 font-medium">{exp.period}</p>
-                  </div>
-                </div>
+              <div className={`bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-6 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-white/50 backdrop-blur-sm`}>
+
 
                 {/* Title and Company */}
                 <h3 className={`text-xl font-bold mb-2 bg-gradient-to-r ${exp.gradient} bg-clip-text text-transparent`}>
@@ -70,22 +59,6 @@ export default function ExperienceSection() {
                 </div>
 
                 <p className="text-gray-700 mb-4 leading-relaxed text-sm">{exp.description}</p>
-
-                {/* Achievements - Reduced */}
-                <div className="mb-4">
-                  <h4 className="font-semibold text-gray-800 mb-2 flex items-center text-sm">
-                    <Star size={14} className="text-yellow-500 mr-1" />
-                    Key Achievements
-                  </h4>
-                  <div className="space-y-1">
-                    {exp.achievements.map((achievement, i) => (
-                      <div key={i} className="flex items-start space-x-2">
-                        <CheckCircle size={12} className="text-green-500 mt-0.5 flex-shrink-0" />
-                        <span className="text-xs text-gray-700">{achievement}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
 
                 {/* Skills - Reduced */}
                 <div>

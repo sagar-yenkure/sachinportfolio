@@ -28,25 +28,17 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section id="testimonials" className="fade-in-section py-20 bg-slate-50">
+    <section id="testimonials" className="fade-in-section py-12 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-slate-900 mb-4"
-          >
-            What People Say
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-slate-600 max-w-3xl mx-auto"
-          >
-            Hear from clients and colleagues about their experience working with me.
-          </motion.p>
+
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <span className="bg-gradient-to-r from-slate-800 via-purple-600 to-pink-600 bg-clip-text text-transparent">What</span>{' '}
+            <span className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 bg-clip-text text-transparent">People Say</span>
+          </h2>
+          <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Hear from  <span className="font-semibold text-purple-600">clients and colleagues</span>  about their experience working with me.
+          </p>
         </div>
 
         <div className="relative max-w-4xl mx-auto">
