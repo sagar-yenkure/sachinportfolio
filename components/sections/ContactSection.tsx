@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Send,
+  Send
 } from 'lucide-react';
 
 export default function ContactSection() {
