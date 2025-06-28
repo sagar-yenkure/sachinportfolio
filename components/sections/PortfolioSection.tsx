@@ -107,7 +107,7 @@ export default function PortfolioSection() {
 
                 {/* Project Content */}
                 <div className="p-6">
-                  <h3 className={`font-bold text-black text-xl bg-clip-text text-transparent`}>
+                  <h3 className={`font-bold text-black text-xl bg-clip-text`}>
                     {project.title}
                   </h3>
                   <p className="text-slate-600 text-sm my-1 leading-relaxed">
