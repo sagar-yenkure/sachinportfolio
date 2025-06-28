@@ -51,11 +51,33 @@ export const skills = [
 ];
 
 export const stats = [
-    { icon: Zap, number: '5+', label: 'Months Experience', gradient: 'from-electric-purple to-neon-pink', bg: 'from-purple-50 to-pink-50' },
-    { icon: Heart, number: '50+', label: 'Projects Completed', gradient: 'from-electric-purple to-neon-pink', bg: 'from-purple-50 to-pink-50' },
-    { icon: Target, number: '100%', label: 'Client Satisfaction', gradient: 'from-electric-purple to-neon-pink', bg: 'from-purple-50 to-pink-50' },
-    { icon: Rocket, number: '3', label: 'Months Internship', gradient: 'from-electric-purple to-neon-pink', bg: 'from-purple-50 to-pink-50' },
-];
+    {
+        icon: Zap,
+        number: '5+',
+        label: 'Design Tools Mastered',
+        gradient: 'from-electric-purple to-neon-pink',
+        bg: 'from-purple-50 to-pink-50',
+    }, {
+        icon: Heart,
+        number: '50+',
+        label: 'Social Media Posts',
+        gradient: 'from-electric-purple to-neon-pink',
+        bg: 'from-purple-50 to-pink-50',
+    },
+    {
+        icon: Target,
+        number: '100%',
+        label: 'Positive Feedback',
+        gradient: 'from-electric-purple to-neon-pink',
+        bg: 'from-purple-50 to-pink-50',
+    },
+    {
+        icon: Rocket,
+        number: '5+',
+        label: 'Live Projects Contributed',
+        gradient: 'from-electric-purple to-neon-pink',
+        bg: 'from-purple-50 to-pink-50',
+    },];
 
 export const experiences = [
     {
@@ -76,7 +98,7 @@ export const experiences = [
     {
         type: 'education',
         title: 'Graphic Design Course',
-        company: 'Design Institute',
+        company: 'Crixel A',
         location: 'Offline',
         duration: 'Intensive Program',
         period: '2024',
@@ -92,35 +114,39 @@ export const experiences = [
 
 export const testimonials = [
     {
-        name: 'Priya Sharma',
-        role: 'Marketing Manager',
-        company: 'TechStart Solutions',
-        content: 'Sachin delivered exceptional festival graphics for our Diwali campaign. His attention to detail and understanding of traditional aesthetics while maintaining modern appeal was remarkable.',
-        rating: 5,
-        avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150'
+        name: 'Sanket Kulkarni',
+        role: 'Graphic Designer',
+        company: 'Vionsys IT Solutions PVT LTD.',
+        content:
+            'Working alongside Sachin was a great experience. He was quick to grasp design tools and trends, and his creative inputs added flair to our social media graphics and client projects.',
+        avatar:
+            'https://res.cloudinary.com/dja2zi1g7/image/upload/v1751095436/users/sanket_atumv5.jpg',
     },
     {
-        name: 'Rajesh Kumar',
-        role: 'Supervisor',
-        company: 'Vionsys IT',
-        content: 'During his internship, Sachin showed great dedication and creativity. He quickly adapted to our design requirements and consistently delivered high-quality work on time.',
-        rating: 5,
-        avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150'
+        name: 'Yash Zore',
+        role: 'Hr Executive',
+        company: 'Vionsys IT Solutions PVT LTD.',
+        content:
+            'As a Graphic Design Intern, Sachin displayed professionalism and a learning mindset. He contributed to internal branding and HR campaigns with fresh, energetic designs that boosted team engagement.',
+        avatar:
+            'https://res.cloudinary.com/dja2zi1g7/image/upload/v1743840879/users/1639198887919_e4sims.jpg',
     },
     {
-        name: 'Anita Patel',
-        role: 'Small Business Owner',
-        company: 'Patel Enterprises',
-        content: 'The educational materials Sachin designed for our training programs were clear, engaging, and perfectly aligned with our brand. Our employees found them very helpful.',
-        rating: 5,
-        avatar: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150'
+        name: 'Omkar Torne',
+        role: 'Digital Marketing Executive',
+        company: 'Vionsys IT Solutions PVT LTD.',
+        content:
+            'Sachin played a crucial role in creating visually engaging marketing assets for our digital campaigns. His adaptability and eye for design helped us maintain brand consistency across multiple platforms.',
+        avatar:
+            'https://res.cloudinary.com/dja2zi1g7/image/upload/v1743841303/users/1728895563351_mxf3mj.jpg',
     },
     {
-        name: 'Vikram Singh',
-        role: 'Social Media Manager',
-        company: 'Digital Wave Agency',
-        content: 'Sachin created stunning Instagram posts for our clients. His understanding of social media design trends and ability to create engaging visuals is impressive.',
-        rating: 5,
-        avatar: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150'
-    }
+        name: 'Ravikant Waghmare',
+        role: 'Software Engineer',
+        company: 'Vionsys IT Solutions PVT LTD.',
+        content:
+            'Sachin’s design support during our product launch was truly valuable. He helped translate technical ideas into visually appealing UI mockups and assets, which made team communication and client presentations much smoother.',
+        avatar:
+            'https://res.cloudinary.com/dja2zi1g7/image/upload/v1743840911/users/1742714591018_rsyhtj.jpg',
+    },
 ];

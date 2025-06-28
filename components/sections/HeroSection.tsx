@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <section id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-slate-50 relative min-h-screen flex items-center justify-center">
+    <section id="home" className="max-w-7xl mx-auto px-4 pt-24 sm:px-6 lg:px-8 bg-slate-50 relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full blur-3xl opacity-30 animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
@@ -22,7 +22,7 @@ function App() {
       <div className="relative z-10 max-w-4xl mx-auto text-center">
 
         <div
-          className="inline-block mb-6"
+          className="inline-block mb-8"
         >
           <span className="px-6 py-3 my-2 bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 rounded-full text-sm font-space-grotesk font-semibold tracking-wide uppercase border border-purple-200">
             ✨ Available for new projects

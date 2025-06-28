@@ -57,10 +57,10 @@ export default function ContactSection() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-2xl"></div>
               <form
                 onSubmit={handleSubmit}
-                className="relative z-10 flex flex-col lg:flex-row lg:items-end gap-4 w-full"
+                className=" flex flex-col justify-center items-center lg:flex-row gap-4 w-full"
               >
                 {/* Email Input */}
-                <div className="w-full flex-1">
+                <div className="w-full flex-1 mb-1.5">
                   <label htmlFor="email" className="block text-sm font-semibold text-slate-700 mb-1">
                     Your Email
                   </label>
@@ -94,7 +94,7 @@ export default function ContactSection() {
                 </div>
 
                 {/* Submit Button */}
-                <div className="w-full lg:w-auto">
+                <div className="w-full lg:w-auto mt-4">
                   <button
                     type="submit"
                     className="w-full lg:w-auto bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold py-3 px-6 rounded-xl hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2 group"
@@ -104,8 +104,6 @@ export default function ContactSection() {
                   </button>
                 </div>
               </form>
-
-
             </div>
           </div>
         </div>

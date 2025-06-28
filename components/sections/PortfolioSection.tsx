@@ -1,18 +1,10 @@
 'use client';
 
 import { portfolioCategories } from '@/constants/projects';
-import { ExternalLink, Eye, Star } from 'lucide-react';
+import { Eye, Star } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
 import React, { useState } from 'react';
 import { Button } from '../ui/button';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog';
 import { ProjectDialog } from './ProjectDialog';
 
 export default function PortfolioSection() {
@@ -54,14 +46,14 @@ export default function PortfolioSection() {
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
                     className={`flex flex-col sm:flex-row items-center justify-center gap-2 p-2 sm:p-4 rounded-xl transition-all duration-300 text-sm font-medium group ${activeCategory === category.id
-                      ? `bg-gradient-to-r ${category.gradient} text-white shadow-lg transform scale-105`
-                      : 'text-slate-600 hover:text-slate-800 hover:bg-slate-50'
+                      ? ` text-purple-600 shadow-xl transform scale-105`
+                      : 'text-slate-600 hover:text-slate-800'
                       }`}
                   >
                     <Icon
                       size={18}
                       className={`${activeCategory === category.id
-                        ? 'text-white'
+                        ? 'text-purple-600'
                         : 'text-slate-500 group-hover:text-slate-700'
                         } transition-colors duration-300`}
                     />
@@ -77,11 +69,11 @@ export default function PortfolioSection() {
 
         {/* Projects Grid */}
         <div className="transition-all duration-500 ease-in-out">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {activeData.projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${activeData.bgGradient} border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105`}
+                className={`group relative overflow-hidden rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105`}
                 onMouseEnter={() => setHoveredProject(project.id)}
                 onMouseLeave={() => setHoveredProject(null)}
                 style={{
@@ -101,50 +93,32 @@ export default function PortfolioSection() {
                   />
 
                   {/* Overlay */}
-                  <div className={`absolute inset-0 bg-gradient-to-r ${activeData.gradient} opacity-0 group-hover:opacity-80 transition-all duration-300 flex items-center justify-center`}>
+                  <div className={`absolute inset-0 transition-all duration-300 flex items-center justify-center `}>
                     <div className="flex items-center space-x-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <Button
                         onClick={() => setSelectedProject(project)}
-                        className="bg-white/20 backdrop-blur-lg rounded-full p-3 text-white hover:bg-white/30 transition-all duration-200 border border-white/30 hover:scale-110"
+                        className="bg-white/40 backdrop-blur-lg rounded-full p-2.5 text-white hover:bg-white/30 transition-all duration-200 border border-white/30 hover:scale-110"
                       >
                         <Eye size={20} />
                       </Button>
                     </div>
                   </div>
-
-                  {/* Category Badge */}
-                  <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 bg-gradient-to-r ${activeData.gradient} text-white text-xs font-semibold rounded-full shadow-lg backdrop-blur-sm`}>
-                      {project.category}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Project Content */}
                 <div className="p-6">
-                  <h3 className={`font-bold text-xl mb-3 bg-gradient-to-r ${activeData.gradient} bg-clip-text text-transparent`}>
+                  <h3 className={`font-bold text-black text-xl bg-clip-text text-transparent`}>
                     {project.title}
                   </h3>
-                  <p className="text-slate-600 text-sm mb-4 leading-relaxed">
+                  <p className="text-slate-600 text-sm my-1 leading-relaxed">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Subtle hover effect overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-r ${activeData.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`}></div>
+                <div className={`absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none`}></div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="inline-flex items-center space-x-3 text-slate-600 text-lg">
-            <Star size={24} className="text-yellow-500 animate-pulse" />
-            <span>Want to see more projects?</span>
-            <button className="text-purple-600 font-semibold hover:text-purple-700 transition-colors duration-200 hover:underline">
-              Get in touch!
-            </button>
           </div>
         </div>
       </div>
