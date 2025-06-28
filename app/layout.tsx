@@ -2,9 +2,46 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Sachin Yenkure - Creative Graphic Designer',
-  description: 'Portfolio of Sachin Yenkure - A passionate graphic designer specializing in festival graphics, traditional designs, educational materials, Instagram posts, and UX graphics.',
+  title: 'Sachin Yenkure | Graphic Designer & Visual Artist',
+  description:
+    'Explore the creative portfolio of Sachin Yenkure - a passionate graphic designer skilled in festival creatives, traditional art, Instagram posts, branding, and UX/UI visuals.',
+  keywords:
+    'Graphic Designer, UI/UX Designer, Festival Graphics, Instagram Post Designer, Branding Designer, Canva Designer, Figma, Social Media Graphics, Creative Portfolio, Visual Artist',
+  metadataBase: new URL(process.env.APP_URL!),
+  openGraph: {
+    title: 'Sachin Yenkure | Graphic Designer & Visual Artist',
+    description:
+      'Explore the creative works of Sachin Yenkure - specializing in festival graphics, branding, traditional visuals, and UX designs that tell your brand story.',
+    url: process.env.APP_URL,
+    siteName: 'Sachin Yenkure Portfolio',
+    locale: 'en_US',
+    type: 'website',
+    images: ['opengraph-image.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sachin Yenkure | Graphic Designer & Visual Artist',
+    description:
+      'Portfolio of Sachin Yenkure - specializing in festival creatives, Instagram posts, traditional art, branding, and engaging UX/UI visuals.',
+    images: ['opengraph-image.png'],
+  },
+  alternates: {
+    canonical: process.env.APP_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
 };
+
 
 export default function RootLayout({
   children,
