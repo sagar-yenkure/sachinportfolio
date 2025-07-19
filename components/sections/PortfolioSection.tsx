@@ -86,7 +86,6 @@ export default function PortfolioSection() {
                   <Image
                     width={100}
                     height={100}
-                    quality={100}
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
