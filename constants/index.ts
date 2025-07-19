@@ -59,7 +59,7 @@ export const stats = [
         bg: 'from-purple-50 to-pink-50',
     }, {
         icon: Heart,
-        number: '50+',
+        number: '30+',
         label: 'Social Media Posts',
         gradient: 'from-electric-purple to-neon-pink',
         bg: 'from-purple-50 to-pink-50',
@@ -98,7 +98,7 @@ export const experiences = [
     {
         type: 'education',
         title: 'Graphic Design Course',
-        company: 'Crixel A',
+        company: 'Crixel Avertising Academy',
         location: 'Offline',
         duration: 'Intensive Program',
         period: '2024',
