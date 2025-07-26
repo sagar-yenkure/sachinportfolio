@@ -49,9 +49,35 @@ export default function PortfolioSection() {
                   {cat.name.replace('color', 'colour')} {/* if dynamic or literal */}
                 </TabsTrigger>
 
+<<<<<<< HEAD
               );
             })}
           </TabsList>
+=======
+        {/* Projects Grid */}
+        <div className="transition-all duration-500 ease-in-out">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {activeData.projects.map((project, index) => (
+              <div
+                key={project.id}
+                className={`group relative overflow-hidden rounded-2xl border border-white/20 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105`}
+                onMouseEnter={() => setHoveredProject(project.id)}
+                onMouseLeave={() => setHoveredProject(null)}
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                  animation: 'fadeInUp 0.6s ease-out forwards'
+                }}
+              >
+                {/* Project Image */}
+                <div className="relative aspect-square overflow-hidden">
+                  <Image
+                    width={100}
+                    height={100}
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+>>>>>>> e2d7f1fdb7b48690f8dcb57a749b0c9369653d8f
 
           {portfolioCategories.map((cat) => (
             <TabsContent key={cat.id} value={cat.id}>
