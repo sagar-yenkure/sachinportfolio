@@ -5,7 +5,7 @@ import { Zap } from 'lucide-react';
 
 const SkillSection = () => {
     return (
-        <div className="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-br from-slate-50 via-white to-purple-50/30 relative overflow-hidden">
+        <div className="fade-in-section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
