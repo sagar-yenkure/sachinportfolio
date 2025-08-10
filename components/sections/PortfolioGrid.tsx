@@ -41,15 +41,20 @@ export function PortfolioGrid({ projects }: { projects: Project[] }) {
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="flex items-center space-x-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                <div
+                                    className="opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 
+        transition-all duration-300 flex items-center space-x-4"
+                                >
                                     <Button
                                         onClick={() => setSelectedProject(project)}
-                                        className="bg-white/40 backdrop-blur-lg rounded-full p-2.5 text-white hover:bg-white/30 transition-all duration-200 border border-white/30 hover:scale-110"
+                                        className="bg-white/40 backdrop-blur-lg rounded-full p-2.5 text-white 
+            hover:bg-white/30 transition-all duration-200 border border-white/30 hover:scale-110"
                                     >
                                         <Eye size={20} />
                                     </Button>
                                 </div>
                             </div>
+
                         </div>
                         <div className="p-6">
                             <h3 className="font-bold text-black text-xl">{project.title}</h3>
