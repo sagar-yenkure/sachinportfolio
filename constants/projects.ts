@@ -18,6 +18,30 @@ export const portfolioCategories = [
         icon: Sparkles,
         projects: [
             {
+                id: "16",
+                title: "Lakshmi Pujan Poster",
+                description: "A beautifully crafted Lakshmi Pujan poster featuring divine symbols, festive lamps, and elegant typography — perfect for Diwali celebrations and puja promotions.",
+                image: "https://res.cloudinary.com/dja2zi1g7/image/upload/v1761395551/sachin/travalishq_lakshami_pujan_post_02c_an88wv.jpg",
+            },
+            {
+                id: "17",
+                title: "Diwali Festival Poster",
+                description: "A vibrant Diwali poster capturing the glow of lights, joy, and celebration. Ideal for festive greetings, event promotions, or brand posts.",
+                image: "https://res.cloudinary.com/dja2zi1g7/image/upload/v1761395536/sachin/travalishq_dwali_post_01c_gz7p5m.jpg",
+            },
+            {
+                id: "18",
+                title: "Bhai Dooj Celebration Poster",
+                description: "A heartwarming Bhai Dooj poster symbolizing the bond between brother and sister. Features traditional motifs and festive hues — perfect for social media campaigns.",
+                image: "https://res.cloudinary.com/dja2zi1g7/image/upload/v1761395486/sachin/travlishq_bhai_dooj_post_02cc_ohp3e0.jpg",
+            },
+            {
+                id: "19",
+                title: "Bhai Dooj Festival Poster",
+                description: "An elegant Bhai Dooj poster with a festive theme, showcasing sibling love and joyful colors — great for festive promotions and greetings.",
+                image: "https://res.cloudinary.com/dja2zi1g7/image/upload/v1761395563/sachin/travlishq_bhai_dooj_post_01c_ekh4tj.jpg",
+            },
+            {
                 id: "1",
                 title: "Shravan Festival Poster",
                 description: "A colorful, detailed poster capturing the spirit of Shravan. Blends traditional patterns with modern elements. Perfect for celebrations and events.",
