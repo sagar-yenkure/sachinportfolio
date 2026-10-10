@@ -22,12 +22,10 @@ import {
 } from 'lucide-react';
 import sendmail from '@/actions/sendEmail';
 import { experiences, skills, testimonials } from '@/constants';
-import { portfolioCategories } from '@/constants/projects';
+import { featuredArt, portfolioCategories } from '@/constants/projects';
 import { ProjectDialog } from '@/components/sections/ProjectDialog';
 
 type Project = (typeof portfolioCategories)[number]['projects'][number];
-
-const featuredArt = portfolioCategories[0].projects.slice(0, 3);
 
 const navItems = [
     { label: 'Work', href: '#work' },
@@ -214,7 +212,7 @@ export default function PortfolioExperience() {
                             <span />
                             <span />
                         </div>
-                        {featuredArt.slice(0, 3).map((project, index) => (
+                        {featuredArt.map((project, index) => (
                             <button
                                 key={`${project.id}-${index}`}
                                 className={`hero-art hero-art-${index + 1}`}
