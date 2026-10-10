@@ -81,16 +81,62 @@ export const stats = [
 
 export const experiences = [
     {
+        type: 'experience',
+        title: 'Graphic Designer',
+        company: 'Pune Lok',
+        location: 'Pune - On-site',
+        duration: '6 Months',
+        period: 'Nov 2025 - Apr 2026',
+        description:
+            'Enhanced the visual storytelling of news content by designing and publishing over 150 graphics and visuals, while also producing 50+ engaging news videos tailored for social media. Collaborated closely with editorial teams to ensure accurate and timely news delivery while maintaining high standards of quality and efficiency.',
+        skills: [
+            'Graphic Design',
+            'Social Media Design',
+            'Video Editing',
+            'Visual Storytelling',
+            'Content Creation',
+            'Editorial Collaboration',
+        ],
+        icon: Briefcase,
+        gradient: 'from-blue-500 to-cyan-500',
+        bgGradient: 'from-blue-50 to-cyan-50',
+    },
+    {
+        type: 'internship',
+        title: 'Graphic Design Intern',
+        company: 'Dwij Media',
+        location: 'Pune - On-site',
+        duration: '4 Months',
+        period: 'Aug 2025 - Nov 2025',
+        description:
+            'Designed impactful social media creatives and promotional materials for various client brands, helping increase audience engagement and post reach. Collaborated closely with marketing teams to create visually appealing content aligned with brand guidelines while strengthening teamwork and brand consistency.',
+        skills: [
+            'Graphic Design',
+            'Marketing Graphic Design',
+            'Social Media Design',
+            'Brand Consistency',
+            'Digital Marketing',
+        ],
+        icon: Briefcase,
+        gradient: 'from-blue-500 to-cyan-500',
+        bgGradient: 'from-blue-50 to-cyan-50',
+    },
+    {
         type: 'internship',
         title: 'Graphic Design Intern',
         company: 'Vionsys IT Solutions PVT LTD.',
-        location: 'Office',
+        location: 'Pune - On-site',
         duration: '3 Months',
         period: '2024',
         description:
             'Worked on various graphic design projects including brand identity, digital marketing materials, and user interface designs. Collaborated with the development team to create visually appealing and user-friendly designs.',
-        skills: ['Adobe Creative Suite', 'Brand Design', 'Digital Marketing', 'UI/UX Design', 'Team Collaboration'],
-
+        skills: [
+            'Adobe Creative Suite',
+            'Brand Design',
+            'Digital Marketing',
+            'UI/UX Design',
+            'Team Collaboration',
+        ],
         icon: Briefcase,
         gradient: 'from-blue-500 to-cyan-500',
         bgGradient: 'from-blue-50 to-cyan-50',
@@ -99,13 +145,19 @@ export const experiences = [
         type: 'education',
         title: 'Graphic Design Course',
         company: 'Crixel Avertising Academy',
-        location: 'Offline',
+        location: 'Pune - Offline',
         duration: 'Intensive Program',
         period: '2024',
         description:
             'Completed comprehensive graphic design training covering fundamentals of design, color theory, typography, and modern design tools. Built a strong foundation in visual communication and design principles.',
-        skills: ['Design Fundamentals', 'Color Theory', 'Typography', 'Adobe Photoshop', 'Adobe Illustrator', 'Brand Identity'],
-
+        skills: [
+            'Design Fundamentals',
+            'Color Theory',
+            'Typography',
+            'Adobe Photoshop',
+            'Adobe Illustrator',
+            'Brand Identity',
+        ],
         icon: GraduationCap,
         gradient: 'from-blue-500 to-cyan-500',
         bgGradient: 'from-blue-50 to-cyan-50',
