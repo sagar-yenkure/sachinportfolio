@@ -32,22 +32,21 @@ export const ProjectDialog: React.FC<ProjectDialogProps> = ({
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
-            <DialogContent className="max-w-2xl p-3">
-                <DialogHeader>
-                    <DialogTitle className="text-2xl">{project.title}</DialogTitle>
-                    <DialogDescription className="text-slate-600">
+            <DialogContent className="project-dialog-content max-w-5xl p-0">
+                <DialogHeader className="project-dialog-header">
+                    <DialogTitle className="project-dialog-title">{project.title}</DialogTitle>
+                    <DialogDescription className="project-dialog-description">
                         {project.description}
                     </DialogDescription>
                 </DialogHeader>
 
-                {/* Show image in natural size or responsive full width */}
-                <div className="w-full mt-4 overflow-hidden rounded-xl border border-slate-200">
+                <div className="project-dialog-preview">
                     <Image
                         src={project.image}
                         alt={project.title}
-                        width={1200} // you can adjust this or make dynamic
-                        height={0}
-                        className="w-full h-auto object-cover rounded-xl"
+                        fill
+                        sizes="(max-width: 768px) 94vw, 1000px"
+                        className="project-dialog-image"
                     />
                 </div>
             </DialogContent>

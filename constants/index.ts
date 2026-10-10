@@ -115,35 +115,24 @@ export const experiences = [
 export const testimonials = [
     {
         name: 'Sanket Kulkarni',
-        role: 'Graphic Designer',
-        company: 'Vionsys IT Solutions PVT LTD.',
-        content:
-            'Working alongside Sachin was a great experience. He was quick to grasp design tools and trends, and his creative inputs added flair to our social media graphics and client projects.',
-        avatar:
+        role: 'UI/UX Designer',
+        company: 'Sudhan Gold Loan.',
+        content: "Working alongside Sachin was a great experience. He was quick to grasp design tools and trends, and his creative inputs added flair to our social media graphics and client projects, while consistently bringing fresh ideas and attention to detail.", avatar:
             'https://res.cloudinary.com/dja2zi1g7/image/upload/v1751095436/users/sanket_atumv5.jpg',
     },
     {
         name: 'Yash Zore',
         role: 'Hr Executive',
-        company: 'Vionsys IT Solutions PVT LTD.',
+        company: 'MFD Technologies.',
         content:
             'As a Graphic Design Intern, Sachin displayed professionalism and a learning mindset. He contributed to internal branding and HR campaigns with fresh, energetic designs that boosted team engagement.',
         avatar:
             'https://res.cloudinary.com/dja2zi1g7/image/upload/v1743840879/users/1639198887919_e4sims.jpg',
     },
     {
-        name: 'Omkar Torne',
-        role: 'Digital Marketing Executive',
-        company: 'Vionsys IT Solutions PVT LTD.',
-        content:
-            'Sachin played a crucial role in creating visually engaging marketing assets for our digital campaigns. His adaptability and eye for design helped us maintain brand consistency across multiple platforms.',
-        avatar:
-            'https://res.cloudinary.com/dja2zi1g7/image/upload/v1743841303/users/1728895563351_mxf3mj.jpg',
-    },
-    {
         name: 'Ravikant Waghmare',
         role: 'Software Engineer',
-        company: 'Vionsys IT Solutions PVT LTD.',
+        company: 'Traveazy Group.',
         content:
             'Sachin’s design support during our product launch was truly valuable. He helped translate technical ideas into visually appealing UI mockups and assets, which made team communication and client presentations much smoother.',
         avatar:

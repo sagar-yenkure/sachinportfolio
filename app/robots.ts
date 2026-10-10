@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/site";
 
 
 export default function robots(): MetadataRoute.Robots {
@@ -9,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: "/",
             },
         ],
-        sitemap: `${process.env.APP_URL}/sitemap.xml`,
+        sitemap: `${siteUrl}/sitemap.xml`,
     };
 }
